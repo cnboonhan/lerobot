@@ -1,0 +1,1 @@
+SUBSYSTEM=="tty", ATTRS{idProduct}=="55d3", ATTRS{idVendor}=="1a86", ATTRS{serial}=="58FA081973", SYMLINK+="so100_leader" 
