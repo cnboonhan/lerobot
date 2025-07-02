@@ -44,6 +44,7 @@ from lerobot.cameras.realsense.configuration_realsense import RealSenseCameraCon
 from lerobot.robots import (  # noqa: F401
     Robot,
     RobotConfig,
+    bi_so100_follower,
     koch_follower,
     make_robot_from_config,
     so100_follower,
@@ -58,10 +59,17 @@ from lerobot.teleoperators import (  # noqa: F401
     so100_leader,
     so101_leader,
 )
+
 from lerobot.utils.robot_utils import busy_wait
 from lerobot.utils.utils import init_logging, move_cursor_up
 from lerobot.utils.visualization_utils import _init_rerun
-
+from .teleoperators import (  # noqa: F401
+    bi_so100_leader,
+    gamepad,
+    koch_leader,
+    so100_leader,
+    so101_leader,
+)
 
 @dataclass
 class TeleoperateConfig:
