@@ -86,16 +86,11 @@ from lerobot.utils.utils import (
     init_logging,
     log_say,
 )
-<<<<<<< HEAD:src/lerobot/record.py
 from lerobot.utils.visualization_utils import _init_rerun
-=======
-from lerobot.common.utils.visualization_utils import _init_rerun
 from lerobot.configs import parser
 from lerobot.configs.policies import PreTrainedConfig
 
-from .common.teleoperators import bi_so100_leader, koch_leader, so100_leader, so101_leader  # noqa: F401
->>>>>>> 83cb8c8bfeef3b2d4dbfd06b4e9c66c07de1e393:lerobot/record.py
-
+from .teleoperators import bi_so100_leader, koch_leader, so100_leader, so101_leader  # noqa: F401
 
 @dataclass
 class DatasetRecordConfig:
